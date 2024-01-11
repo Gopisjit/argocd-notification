@@ -1,16 +1,9 @@
-kind: ConfigMap
 apiVersion: v1
+kind: ConfigMap
 metadata:
-name: example-configmap
-namespace: default
+  name: example-configmap
+  namespace: your-namespace   # Replace with your desired namespace
 data:
-# Configuration Values are stored as key-value pairs
-system.data.name: "app-name"
-system.data.url: "https://app-name.com"
-system.data.type_one: "app-type-xxx"
-system.data.value: "3"
-# File like Keys
-system.interface.properties: |
-ui.type=2
-ui.color1=red
-ui.color2=green
+  # Key-value pairs
+  database-url: "jdbc:mysql://example.com:3306/mydatabase"
+  api-key: "your-api-key"
